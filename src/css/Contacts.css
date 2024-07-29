@@ -1,0 +1,238 @@
+.sair_login {
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
+.sair_login:hover {
+  text-decoration: underline;
+}
+
+.contatos_container {
+  min-height: 95vh;
+  display: flex;
+}
+
+.conversas_container {
+  background-color: var(--cor002);
+  border-right: 1px solid var(--cor007);
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.conversas_container aside {
+  background-color: var(--cor008);
+  padding: 0.5em;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  border-right: 1px solid var(--cor007);
+}
+
+.conversas_container .conversas_main_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0.5em;
+  flex-grow: 1;
+  padding: 0.5em;
+}
+
+.conversas_container .conversas_main_container .input_pesquisar_grupos {
+  color: var(--cor001);
+  width: 90%;
+  padding: 0.5em;
+  font-size: 1em;
+  border: 1px solid var(--cor009);
+  border-radius: 5px;
+  margin-bottom: 1em;
+}
+
+.conversas_container .conversas_main_container .input_pesquisar_grupos:focus {
+  outline: none; /* Remove o contorno padrão */
+}
+
+.conversas_container .conversas_main_container .grupos_container {
+  background-color: var(--cor002);
+  width: 95%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  max-height: 700px;
+  overflow: auto;
+  gap: 3px;
+}
+
+.conversas_container .conversas_main_container .grupos_container::-webkit-scrollbar {
+  width: 7px; /* Largura do scrollbar */
+}
+
+.conversas_container .conversas_main_container .grupos_container::-webkit-scrollbar-track {
+  background: transparent; /* Cor do fundo do scrollbar */
+}
+
+.conversas_container .conversas_main_container .grupos_container::-webkit-scrollbar-thumb {
+  background: var(--cor010); /* Cor do thumb (parte móvel) do scrollbar */
+  border-radius: 5px;
+}
+
+.conversas_container .conversas_main_container .grupos_container::-webkit-scrollbar-thumb:hover {
+  background: var(--cor011); /* Cor do thumb ao passar o mouse */
+}
+
+.conversas_container .conversas_main_container .grupos_container .card_conversa {
+  background-color: var(--cor007);
+  width: 90%;
+  padding: 0.5em;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  font-size: 0.8em;
+  border-radius: 5px;
+}
+
+.conversas_container .conversas_main_container .grupos_container .card_conversa:hover {
+  background-color: var(--cor006);
+}
+
+.conversas_container .conversas_main_container .grupos_container .card_conversa img {
+  max-width: 55px;
+  border-radius: 50%;
+}
+
+.mensagens_container {
+  background-color: aquamarine;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.mensagens_container .mensagens_main_container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.mensagens_container aside {
+  background-color: var(--cor008);
+}
+
+.mensagens_container aside .card_avatar {
+  max-width: 300px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.mensagens_container aside .card_avatar img {
+  max-width: 60px;
+  border-radius: 50%;
+  padding: 0.5em;
+}
+
+.mensagens_container .mensagens_main_container .conteudo_container {
+  flex-grow: 1;
+  padding: 1em;
+  background-color: var(--cor005);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-height: 600px;
+  overflow: auto;
+}
+
+.mensagens_container .mensagens_main_container .conteudo_container::-webkit-scrollbar {
+  width: 7px; /* Largura do scrollbar */
+}
+
+.mensagens_container .mensagens_main_container .conteudo_container::-webkit-scrollbar-track {
+  background: transparent; /* Cor do fundo do scrollbar */
+}
+
+.mensagens_container .mensagens_main_container .conteudo_container::-webkit-scrollbar-thumb {
+  background: var(--cor010); /* Cor do thumb (parte móvel) do scrollbar */
+  border-radius: 5px;
+}
+
+.mensagens_container .mensagens_main_container .conteudo_container::-webkit-scrollbar-thumb:hover {
+  background: var(--cor011); /* Cor do thumb ao passar o mouse */
+}
+
+.card_msg {
+  padding: 0.5em 1em;
+  font-weight: 500;
+  border-radius: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: flex-end;
+}
+
+.card_msg span {
+  font-size: .7em;
+}
+
+.card_msg_pai {
+  display: flex;
+  flex-direction: column;
+}
+
+.mensagens_container .mensagens_main_container .conteudo_container .msg_user {
+  background-image: var(--degrade001);
+  color: var(--cor002);
+  align-self: flex-end;
+  
+}
+
+
+.card_msg_integrante {
+  align-self: flex-start; 
+}
+
+.card_msg_integrante > span {
+  margin: .5em;
+  font-weight: bold;
+}
+
+.mensagens_container .mensagens_main_container .conteudo_container .msg_integrante {
+  background-color: var(--cor002);
+  color: var(--cor001);
+}
+.mensagens_container .mensagens_main_container .nova_mensagem_container {
+  background-color: var(--cor008);
+  padding: 0.5em;
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.mensagens_container .mensagens_main_container .nova_mensagem_container input {
+  flex-grow: 1;
+  font-size: 1.2em;
+  padding: 0.5em;
+  border-radius: 5px;
+  border: 1px solid var(--cor009);
+  color: var(--cor001);
+}
+
+.mensagens_container .mensagens_main_container .nova_mensagem_container input:focus {
+  outline: none; /* Remove o contorno padrão */
+}
+
+.mensagens_container .mensagens_main_container .nova_mensagem_container button {
+  background-image: var(--degrade002);
+  color: var(--cor002);
+  border: 1px solid transparent;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  font-size: 1.2em;
+  transition: 0.4s;
+}
+
+.mensagens_container .mensagens_main_container .nova_mensagem_container button:hover {
+  background-image: none;
+  background-color: var(--cor002);
+  color: var(--cor004);
+  border-color: var(--cor004);
+  font-size: 1.5em;
+}
